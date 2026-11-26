@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GIMON STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#12161d);--ink:light-dark(#1f2a3a,#e8edf3);--muted:light-dark(#566275,#a9b4c2);--peach:light-dark(#ffecd6,#3a2a1d);--teal:light-dark(#d6f2ee,#16332f);--line:light-dark(#dfe5ec,#2a3340);--accent:light-dark(#0f6f64,#6fd6c8)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;overflow-x:clip}
+.hero{background:linear-gradient(90deg,var(--peach) 50%,var(--teal) 50%);padding:clamp(28px,5vw,56px) max(5vw,16px)}
+.hero .in{max-width:760px;margin:0 auto;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;margin:0 0 6px;text-wrap:balance}
+.sub{margin:0;color:var(--muted)}
+nav{border-bottom:1px solid var(--line);padding:12px max(5vw,16px)}
+nav .in{max-width:760px;margin:0 auto;display:flex;gap:20px;flex-wrap:wrap}
+nav a,footer a{color:var(--accent);font-weight:700;text-decoration:none;padding:10px 0;display:inline-block}
+nav a:hover,footer a:hover,nav a:focus-visible,footer a:focus-visible{text-decoration:underline}
+main{max-width:760px;margin:0 auto;padding:28px max(5vw,16px) 40px}
+h2{font-size:22px;line-height:1.3;margin:36px 0 8px}
+h3{font-size:17px;margin:22px 0 4px}
+.en{color:var(--muted);font-size:15px}
+.en h2,.en h3{color:var(--ink)}
+hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+ul{padding-left:1.3em}
+.note{background:var(--teal);border-radius:12px;padding:14px 18px}
+footer{border-top:1px solid var(--line);padding:24px max(5vw,16px);color:var(--muted);font-size:14px}
+footer .in{max-width:760px;margin:0 auto;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+<div><h1>GIMON STUDIO</h1><p class="sub">「ギモン放送室」の動画制作・分析ツール</p></div>
+</div></header>
+<nav><div class="in"><a href="index.html">トップ / Home</a><a href="terms.html">利用規約 / Terms of Service</a><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></div></nav>
+<main>
+<h2>このアプリについて</h2>
+<p>GIMON STUDIO は、ショート動画チャンネル「ギモン放送室」（@gimon_onair）を運営する個人が、自分の動画の制作と振り返りのために使う社内ツールです。一般の方への提供・販売はしていません。</p>
+<p>TikTok との連携では、運営者本人の TikTok アカウントについて、プロフィールの基本情報と投稿済み動画の一覧・公開されている数値（再生数・いいね数・コメント数・シェア数）を読み取り、次の動画づくりの参考にします。TikTok への投稿や、他の利用者のデータの取得は行いません。</p>
+<div class="note">使用する TikTok の権限：<b>user.info.basic</b>、<b>video.list</b>（読み取りのみ）</div>
+
+<hr>
+<section class="en" lang="en">
+<h2>About this app</h2>
+<p>GIMON STUDIO is an internal tool used by the individual who runs the short-video channel "Gimon Hososhitsu" (@gimon_onair) to produce and review their own videos. It is not offered or sold to the public.</p>
+<p>With TikTok, the app reads only the operator's own account: basic profile information and the list of the operator's own posted videos with their public counts (views, likes, comments, shares). It does not post to TikTok and does not access other users' data.</p>
+<p>TikTok scopes used: user.info.basic, video.list (read-only).</p>
+</section>
+</main>
+<footer><div class="in"><span>© 2026 ギモン放送室</span><a href="terms.html">利用規約 / Terms</a><a href="privacy.html">プライバシーポリシー / Privacy</a></div></footer>
+</body>
+</html>
